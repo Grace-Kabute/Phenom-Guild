@@ -1,0 +1,58 @@
+.projects{
+    background-color: rgba(227, 225, 225, 0.338);
+    padding: 6rem 4rem;
+
+}
+.projects h2{
+    margin: 2rem 0;
+}
+.project{
+    background-color: rgba(227, 225, 225, 0.283);
+    border-radius: 10px;
+    max-width: 400px;
+    border: 1px solid rgba(128, 128, 128, 0.178);
+    padding-bottom: 1rem;
+}
+button{
+    background-color: yellow;
+    border-radius: 16px;
+    padding: 1rem 1.5rem;
+    font-weight: bold;
+    font-size: large;
+}
+button:hover{
+    color: white;
+}
+.projectWrapper{
+    color: black;
+}
+.projectContainer{
+    display: flex;
+    justify-content: space-around;
+}
+.centred {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding-top: 2rem;
+  }
+  
+  .centred div:first-child {
+    text-align: left;
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  .centred a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 4px;
+  }
+  
+  .centred span {
+    font-weight: bold;
+  }
+  
+  
+  

@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+.HeroContainer {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  color: white;
+}
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -66;
+}
+.HeroContainer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(8, 39, 45, 0.72);
+  z-index: -33;
+}
+h1{
+  font-size: xx-large;
+  font-weight: bolder;
+}
+.hero-swiper {
+  position: absolute;
+  inset: 0;
+  z-index: -3;
+}
+
+.hero-slide {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.hero-content{
+  position: relative;
+  max-width: 800px;
+  text-align: center;
+  top: 30%;
+  left: 29%;
+}
+.hero-content h3{
+    margin: 1.5rem 0;
+    font-size: large;
+}
+.btn{
+    background-color: yellow;
+    border-radius: 16px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    font-weight: bold;
+    font-size: medium;
+}
+.btn:hover{
+  background-color: #0c3e49;
+  color: white;
+}
+.scroll-arrow {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bounce 2s infinite;
+  transition: opacity 0.4s ease;
+  color: white;
+  z-index: 10;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, -10px);
+  }
+}
+
+.HeroContainer .img:hover{
+    transform: scale(1.15);
+}
+.grid-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+    animation: drift 30s linear infinite;
+    z-index: 0;
+  }
+  
+  @keyframes drift {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 200px 200px;
+    }
+  }
+  
+  @media screen and (max-width: 767px){
+    .HeroContainer{
+        padding: 1rem;
+        width: 103vw;
+        height: 98vh;
+        position: relative;
+    }
+    .img{
+        display: none;
+    }
+    .hero-content{
+        position: absolute;
+        top: 15%;
+        left: 0%;
+        padding: .5rem;
+    }
+    .img-mbl{
+      position: absolute;
+      bottom: 3%;
+      left: 0;
+      width: 100%;
+    }
+  }

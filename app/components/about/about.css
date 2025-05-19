@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .about {
+    background-color: white;
+  }
+  
+  .about section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 6rem 2rem;
+    line-height: 2rem;
+    font-size: large;
+  }
+  
+  .about h2 {
+    margin: 2rem 0;
+    color: green;
+    text-align: center;
+  }
+  
+  .aboutUs-background {
+    position: relative;
+    background-image: url('/construct.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .aboutUs-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.84);
+    pointer-events: none;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+  }
+  
+  .aboutUs-text {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    max-width: 800px;
+  }
+  
+  .aboutUs-1 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+  }
+  
+  .aboutUs-img {
+    flex-shrink: 0;
+  }
+  
+  .reveal {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.8s ease-in-out;
+  }
+  
+  .hiddenReveal {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  
+  .vision {
+    background-color: rgba(227, 225, 225, 0.475);
+    padding: 4rem 2rem;
+    height: 100vh;
+  }
+  
+  .vision-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .vision-1 p {
+    max-width: 800px;
+  }
+  
+  blockquote {
+    max-width: 600px;
+    font-weight: bold;
+    font-style: italic;
+    border-left: 4px solid #999;
+    padding-left: 1rem;
+    margin-top: 1rem;
+    color: #333;
+  }
+  .founder{
+    text-align: center;
+    align-self: center;
+  }
+  .services {
+    background-color: rgba(233, 250, 245, 0.24);
+    padding: 4rem 2rem;
+    width: 100%;
+  }
+  .grid{
+    gap: 2rem;
+    padding: 2rem;
+  }
+  .img {
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+  }
+  
+  /* Mobile responsive */
+  @media (max-width: 768px) {
+    .about section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .aboutUs-1,
+    .vision-1 {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .aboutUs-text {
+      text-align: center;
+    }
+  }
+  

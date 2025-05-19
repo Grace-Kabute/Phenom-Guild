@@ -1,0 +1,43 @@
+.footerContainer{
+    background-color: rgba(8, 39, 45, 0.886);
+    color: rgba(212, 211, 211, 0.701);
+    height: 40vh;
+}
+.navigation, Link{
+    display: flex;
+    flex-direction: column;
+    color: rgba(212, 211, 211, 0.701);
+}
+.copyright{
+    text-align: center;
+}
+.footer-2{
+    max-width: 300px;
+}
+.footer-2 p{
+    padding: 2rem 0;
+}
+input, textarea{
+    background-color: transparent;
+    border: 1px solid grey;
+    padding: 1rem;
+    border-radius: 20px;
+    width: 300px;
+    display: block;
+    margin-bottom: 2rem;
+    color: rgba(212, 211, 211, 0.701);
+}
+button{
+    padding: 1rem;
+    width: 300px;
+}
+.footer-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+hr{
+    margin: 1.2rem 1rem;
+    box-shadow: 0 2px 2px rgba(207, 205, 205, 0.212);
+}
