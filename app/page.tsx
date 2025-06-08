@@ -2,7 +2,6 @@ import Hero from "./components/hero/hero"
 import AboutSection from "./components/about/about"
 import Footer from "./components/footer/footer"
 import Projects from "./components/projects/projects"
-import ProjectPage from "./components/projects/project"
 
 
 export default function Home() {

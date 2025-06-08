@@ -52,7 +52,7 @@ const Hero = () => {
         playsInline
         className="bg-video"
       >
-        <source src="/video.mp4" type="video/mp4" />
+        <source src="/trimmed.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div className="grid-overlay"></div>
@@ -60,12 +60,12 @@ const Hero = () => {
         <h1>
           WE ARE BUILT FOR THIS
         </h1>
+        <h2>You focus on the dream. We handle the blueprint and the build.</h2>
         <h3 className="mt-4 text-lg md:text-xl text-gray-700">
-        We deliver architectural plans, structural design drawings, detailed Bills of Quantities, and full construction services. we handle the technical work so you can focus on the vision.
-        </h3>
-        <p><i>Trusted by homeowners across Kenya.</i></p>
-        <button className="btn px-6 py-3 text-white rounded-full hover:bg-[#0c3e49] transition-all">
-          see our work
+          We deliver architectural plans, structural drawings, Bills of Quantities, and complete construction services. We handle the technical work so you can focus on the vision.        </h3>
+        <p><i>Trusted by homeowners and developers across Kenya.</i></p>
+        <button className="btn px-6 py-3 rounded-full transition-all">
+          See our work
         </button>
         </div>
         {showArrow && (

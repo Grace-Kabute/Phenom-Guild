@@ -10,7 +10,7 @@ const AboutSection = () => {
   const [visible, setVisible] = useState(false);
   const [overlayOpacity, setOverlayOpacity] = useState(0);
 
-  // IntersectionObserver for text reveal
+  // Observer for text reveal
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => setVisible(entry.isIntersecting),
@@ -21,7 +21,7 @@ const AboutSection = () => {
     return () => observer.disconnect();
   }, []);
 
-  // Scroll-based overlay fade effect
+  // overlay fade effect
   useEffect(() => {
     const handleScroll = () => {
       if (!ref.current) return;
@@ -67,7 +67,7 @@ const AboutSection = () => {
               <span>10+ Years</span>
             </div>
           </div>
-          <button className="btn">Work with us</button>
+          <button className="btn rounded-full">Work with us</button>
         </div>
       </section>
 

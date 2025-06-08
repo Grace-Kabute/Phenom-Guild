@@ -22,7 +22,7 @@ export interface Project {
       client: "Private Client",
       year: 2022,
       material: "Earth blocks & timber",
-      image: "/images/projects/villa1.jpg",
+      image: "/hero-1.jpg",
     },
     {
       id: "project-002",
@@ -33,7 +33,7 @@ export interface Project {
       client: "Dara Developers Ltd.",
       year: 2023,
       material: "Concrete, steel, glass",
-      image: "/images/projects/commercial1.jpg",
+      image: "/hero-2.jpg",
     },
     {
       id: "project-003",
@@ -44,7 +44,7 @@ export interface Project {
       client: "Muriithi Family",
       year: 2021,
       material: "Brick, concrete",
-      image: "/images/projects/bungalow1.jpg",
+      image: "/hero-3.jpg",
     },
   ];
   

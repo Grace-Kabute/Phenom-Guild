@@ -30,7 +30,7 @@ const Footer = () => {
           <form action="">
             <input type="email" placeholder='email'/>
             <textarea name="message" id="message">write message</textarea>
-            <button className='btn'>Submit</button>
+            <button className='btn rounded-full'>Submit</button>
           </form>
         </div>
       </div>

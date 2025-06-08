@@ -1,7 +1,7 @@
 .footerContainer{
     background-color: rgba(8, 39, 45, 0.886);
     color: rgba(212, 211, 211, 0.701);
-    height: 40vh;
+    max-height: 40vh;
 }
 .navigation, Link{
     display: flex;
