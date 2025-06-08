@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import ServicesSection from './services';
+import ButtonLink from '../button';
 import './about.css';
 
 const AboutSection = () => {
@@ -67,7 +68,7 @@ const AboutSection = () => {
               <span>10+ Years</span>
             </div>
           </div>
-          <button className="btn rounded-full">Work with us</button>
+        <ButtonLink href="/contact" className='btn'>Work with us</ButtonLink>
         </div>
       </section>
 

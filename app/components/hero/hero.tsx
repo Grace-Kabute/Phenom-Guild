@@ -1,6 +1,7 @@
 'use client';
 
 import Navbar from '../navbar/navbar'
+import ButtonLink from '../button';
 import {useEffect, useState } from 'react';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
@@ -64,9 +65,7 @@ const Hero = () => {
         <h3 className="mt-4 text-lg md:text-xl text-gray-700">
           We deliver architectural plans, structural drawings, Bills of Quantities, and complete construction services. We handle the technical work so you can focus on the vision.        </h3>
         <p><i>Trusted by homeowners and developers across Kenya.</i></p>
-        <button className="btn px-6 py-3 rounded-full transition-all">
-          See our work
-        </button>
+        <ButtonLink href="/gallery" className='btn'>See our work</ButtonLink>
         </div>
         {showArrow && (
         <div className="scroll-arrow">

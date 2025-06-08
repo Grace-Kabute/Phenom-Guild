@@ -2,6 +2,7 @@
 
 import React from 'react';
 import ProjectCard from './projectCard';
+import ButtonLink from '../button';
 import './projects.css';
 import { projectsData } from '../../data'; // adjust path if needed
 
@@ -22,9 +23,7 @@ const Projects = () => {
       </div>
 
       <div className="mt-10 text-center">
-        <button className="btn px-6 py-3 rounded-full transition-all">
-          Explore
-        </button>
+        <ButtonLink href="/gallery" className='btn'>Explore</ButtonLink>
       </div>
     </section>
   );
