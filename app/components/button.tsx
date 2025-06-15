@@ -1,7 +1,5 @@
 import Link from 'next/link';
 
-
-
 type ButtonLinkProps = {
   href: string;
   children: React.ReactNode;

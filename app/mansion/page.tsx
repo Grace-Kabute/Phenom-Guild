@@ -3,11 +3,10 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useParams, notFound } from 'next/navigation';
-import Navbar from '../navbar/navbar';
-import { projectsData } from '../../data'; // adjust the path if needed
-import './projects.css';
+import Navbar from '../components/navbar/navbar';
+import { projectsData } from '../data';
 
-const ProjectPage = () => {
+const Mansion = () => {
   const params = useParams();
   const { id } = params as { id: string };
 
@@ -54,4 +53,4 @@ const ProjectPage = () => {
   );
 };
 
-export default ProjectPage;
+export default Mansion;

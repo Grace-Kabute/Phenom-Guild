@@ -8,11 +8,10 @@ import { projectsData } from '../../data'; // adjust path if needed
 
 const Projects = () => {
   return (
-    <section className="projects px-6 py-12 bg-gray-50">
+    <section className="projects max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
       <h2 className="text-3xl font-bold mb-8 text-center">Recent Projects</h2>
-
-      <div className="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-3 gap-8">
-        {projectsData.map(project => (
+      <div className="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-1 gap-8">
+        {projectsData.slice(0, 3).map(project => (
           <ProjectCard
             key={project.id}
             src={project.image}
